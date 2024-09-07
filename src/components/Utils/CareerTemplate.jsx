@@ -2,12 +2,12 @@ import propTypes from "prop-types";
 
 const CareerTemplate = ({ title, name, cgpa }) => {
   return (
-    <div className="w-5/5 relative h-[100px] text-black dark:text-white">
+    <div className="w-5/5 relative h-[120px] text-black dark:text-white">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        fill="currentColor"
-        className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-black dark:text-white"
+        fill="#3b82f6"
+        className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-md text-black dark:text-white"
       >
         <path
           fillRule="evenodd"
@@ -15,7 +15,7 @@ const CareerTemplate = ({ title, name, cgpa }) => {
           clipRule="evenodd"
         />
       </svg>
-      <div className="ml-6 max-w-[400px] leading-loose">
+      <div className="ml-6 max-w-[350px] leading-loose">
         <h4 className="text-xl font-bold leading-relaxed">{title}</h4>
         <li className="text-base font-semibold leading-loose">{name}</li>
         <li className="text-base font-bold leading-loose">{cgpa}</li>

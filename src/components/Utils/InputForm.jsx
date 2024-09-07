@@ -11,13 +11,13 @@ function InputForm({
 }) {
   return (
     <>
-      <div className="flex items-center justify-center gap-5">
-        <label
+      <fieldset className="my-2 rounded-md border-2">
+        <legend
           htmlFor={htmlFor}
-          className="form-label my-2 text-lg font-semibold text-black dark:text-white"
+          className="form-label px-2 text-lg font-semibold text-black dark:text-white"
         >
           {labelText}
-        </label>
+        </legend>
         <input
           type={type}
           id={id}
@@ -27,7 +27,7 @@ function InputForm({
           required={true}
           placeholder={placeholder}
         />
-      </div>
+      </fieldset>
     </>
   );
 }

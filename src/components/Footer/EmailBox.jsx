@@ -25,12 +25,9 @@ function EmailBox() {
   };
 
   return (
-    <div className="m-5 flex flex-col items-center justify-start gap-5 text-center text-black dark:text-white">
-      <h3 className="font-[Gilroy-Dark] text-3xl uppercase text-blue-500">
-        get in touch
-      </h3>
-      <p className="w-3/5 text-lg font-semibold">
-        Looking for a collab (or) just want to say hello ? Go ahead !{" "}
+    <div className="flex flex-col items-center justify-start gap-5 text-black dark:text-white">
+      <p className="max-w-[300px] text-xl font-bold uppercase leading-relaxed">
+        Looking for a collab for your next project?
       </p>
       <form onSubmit={handleShoot}>
         <InputForm
@@ -53,20 +50,23 @@ function EmailBox() {
           placeholder="miketyson@example.com"
           onChange={(e) => SetEmail(e.target.value)}
         />
-        <textarea
-          htmlFor="message"
-          value={message}
-          id="message"
-          required={true}
-          rows={3}
-          cols={30}
-          onChange={(e) => SetMessage(e.target.value)}
-          placeholder="your message here...."
-          className="form-input my-2 w-full rounded-sm border-0 py-2 text-start text-black outline-none dark:bg-black dark:text-white"
-        ></textarea>
+        <fieldset className="rounded-md border-2">
+          <legend className="px-2 text-lg font-semibold">Message</legend>
+          <textarea
+            htmlFor="message"
+            value={message}
+            id="message"
+            required={true}
+            rows={2}
+            cols={40}
+            onChange={(e) => SetMessage(e.target.value)}
+            placeholder="your message here...."
+            className="form-input m-2 w-full rounded-sm border-0 text-start text-black outline-none dark:bg-black dark:text-white"
+          ></textarea>
+        </fieldset>
         <button
           type="submit"
-          className="btn w-4/5 border-black text-black dark:border-white dark:text-white"
+          className="btn mt-5 w-full border-black text-black dark:border-white dark:text-white"
         >
           <span className="flex items-center justify-center gap-2 px-10 uppercase">
             Shoot <FaLongArrowAltRight />

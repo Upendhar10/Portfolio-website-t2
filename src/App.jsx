@@ -9,13 +9,6 @@ import Footer from "./components/Footer/Footer";
 import Preloader from "./components/Preloader";
 import { useEffect, useState } from "react";
 
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(useGSAP);
-gsap.registerPlugin(ScrollTrigger);
-
 function App() {
   const [splash, Setsplash] = useState(true);
 
