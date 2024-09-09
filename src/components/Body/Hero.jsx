@@ -1,6 +1,8 @@
 import propTypes from "prop-types";
 import { TypeAnimation } from "react-type-animation";
 
+import Links from "../../Configs/Links";
+
 import Socials from "../Utils/Socials";
 
 import {
@@ -20,8 +22,8 @@ typeSpeed.propTypes = {
   value: propTypes.number.isRequired,
 };
 
-const whatsappNumber = parseInt(import.meta.env.VITE_WHATSAPP);
-const whatsappMessage = encodeURIComponent(import.meta.env.VITE_WHATSAPP_MSG);
+const whatsappNumber = parseInt(Links.VITE_WHATSAPP);
+const whatsappMessage = encodeURIComponent(Links.VITE_WHATSAPP_MSG);
 
 function Hero(typeSpeed) {
   return (
@@ -51,15 +53,9 @@ function Hero(typeSpeed) {
           based in Hyderbad, India.
         </p>
         <div className="-mb-10 mt-8 flex gap-14 text-[40px]">
-          <Socials link={import.meta.env.VITE_LINKEDIN} icon={<FaLinkedin />} />
-          <Socials
-            link={import.meta.env.VITE_GITHUB}
-            icon={<FaSquareGithub />}
-          />
-          <Socials
-            link={import.meta.env.VITE_TWITTER}
-            icon={<FaSquareXTwitter />}
-          />
+          <Socials link={Links.VITE_LINKEDIN} icon={<FaLinkedin />} />
+          <Socials link={Links.VITE_GITHUB} icon={<FaSquareGithub />} />
+          <Socials link={Links.VITE_TWITTER} icon={<FaSquareXTwitter />} />
           <Socials
             link={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
             icon={<FaSquareWhatsapp />}
