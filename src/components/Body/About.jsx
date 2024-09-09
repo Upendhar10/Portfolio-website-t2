@@ -1,6 +1,8 @@
 import assets from "../../assets/assets";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
+import Links from "../../Configs/Links";
+
 function About() {
   return (
     <div
@@ -31,7 +33,7 @@ function About() {
         </p> */}
 
         <button className="btn w-3/5 border-black text-black dark:border-white dark:text-white">
-          <a href={import.meta.env.VITE_RESUME} target="_blank">
+          <a href={Links.VITE_RESUME} target="_blank">
             <span className="flex items-center justify-center gap-2 uppercase">
               Resume <FaLongArrowAltRight className="icon" />
             </span>
