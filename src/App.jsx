@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       Setsplash(false);
-    }, 2500);
+    }, 2000);
 
     // cleanup func
     return () => clearTimeout(timer);

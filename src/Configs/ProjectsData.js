@@ -10,13 +10,13 @@ const ProjectsData = [
     demo: "https://foodville-web-app.netlify.app/",
   },
   {
-    title: "Blackboard",
+    title: "Canvaskraft",
     img: `${assets.blackboard}`,
     description:
-      "Blackboard is an interactive whiteboard web application equipped with multiple features such as sticky-notes, drag and drop, download, image-insertion",
+      "Canvaskraft is an interactive whiteboard web application equipped with multiple features such as sticky-notes, drag and drop, download, image-insertion",
     tech: "https://skillicons.dev/icons?i=css,html,js",
-    github: "https://github.com/Upendhar10/Blackboard-webApp",
-    demo: "https://blackboard-web-app.vercel.app/",
+    github: "https://github.com/Upendhar10/Canvaskraft-webApp",
+    demo: "https://canvaskraft-web-app.vercel.app/",
   },
 ];
 

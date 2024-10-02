@@ -28,15 +28,13 @@ const whatsappMessage = encodeURIComponent(Links.VITE_WHATSAPP_MSG);
 function Hero(typeSpeed) {
   return (
     <>
-      <div className="hero flex h-[100vh] flex-col items-center justify-center gap-5 bg-white text-black transition-colors duration-500 dark:bg-black dark:text-white md:gap-0 md:pt-14">
-        <div className="flex flex-col gap-10 text-2xl font-semibold leading-3 md:flex-row md:gap-3">
-          <span>Namastha👋, my name is</span>
+      <div className="hero flex h-[100vh] flex-col items-center justify-center gap-5 bg-white font-[Alkatra] text-black transition-colors duration-500 dark:bg-black dark:text-white md:gap-0 md:pt-16">
+        <div className="flex flex-col gap-10 text-xl font-semibold leading-3 md:flex-row md:gap-3">
+          <span>Namasthe👋, my name is</span>
           <span>
             {" "}
-            <span className="font-[Gilroy-dark] uppercase text-[#3b82f6]">
-              Upendhar
-            </span>{" "}
-            and I&lsquo;m a
+            <span className="uppercase text-[#3b82f6]">Upendhar</span> and
+            I&lsquo;m a
           </span>
         </div>
         <div className="mx-auto flex flex-col items-center justify-center gap-3 md:gap-0">

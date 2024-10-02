@@ -19,14 +19,14 @@ const whatsappMessage = encodeURIComponent(Links.VITE_WHATSAPP_MSG);
 function Connect() {
   return (
     <div>
-      <h3 className="my-2 text-center font-[Gilroy-Dark] text-3xl uppercase text-blue-500">
+      <h3 className="my-2 text-center font-[Gilroy-Dark] text-4xl uppercase text-blue-500">
         get in touch
       </h3>
       <div className="flex flex-wrap items-center justify-evenly gap-10 md:h-[80vh]">
         <EmailBox />
         <div className="hidden h-4/5 w-[2px] bg-black dark:bg-white md:block"></div>
         <div className="grid place-content-start gap-10 md:place-content-center">
-          <div className="flex gap-10 text-4xl md:flex-col">
+          <div className="flex items-center gap-10 text-[2.5rem] md:flex-col">
             <h3 className="text-2xl font-bold uppercase">Say Hello !</h3>
             <div className="flex gap-5">
               <Socials link={Links.VITE_LINKEDIN} icon={<FaLinkedin />} />
@@ -37,7 +37,7 @@ function Connect() {
               <Socials link={Links.VITE_TWITTER} icon={<FaSquareXTwitter />} />
             </div>
           </div>
-          <div className="flex gap-5 text-4xl md:flex-col">
+          <div className="flex items-center gap-5 text-[2.5rem] md:flex-col">
             <h3 className="text-center text-2xl font-bold uppercase">
               Follow My Work
             </h3>
@@ -50,11 +50,11 @@ function Connect() {
             /> */}
             </div>
           </div>
-          <div className="flex items-center justify-center gap-1">
+          <div className="hidden items-center justify-center gap-1 md:flex">
             <Logo />
-            <div className="font-[gilroy-dark] text-xl uppercase">
-              <h3>nemmani</h3>
-              <h3>upendhar</h3>
+            <div className="font-[gilroy-dark] text-[1.15rem] uppercase">
+              <p>nemmani</p>
+              <p>upendhar</p>
             </div>
           </div>
         </div>

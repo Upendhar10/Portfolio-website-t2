@@ -25,8 +25,8 @@ function EmailBox() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-start gap-5 text-black dark:text-white">
-      <p className="max-w-[300px] text-xl font-bold uppercase leading-relaxed">
+    <div className="flex flex-col items-center justify-start gap-1 text-black dark:text-white">
+      <p className="max-w-[350px] pt-5 text-center text-xl font-bold uppercase leading-relaxed">
         Looking for a collab for your next project?
       </p>
       <form onSubmit={handleShoot}>
@@ -61,12 +61,12 @@ function EmailBox() {
             cols={40}
             onChange={(e) => SetMessage(e.target.value)}
             placeholder="your message here...."
-            className="form-input m-2 w-full rounded-sm border-0 text-start text-black outline-none dark:bg-black dark:text-white"
+            className="form-input w-full rounded-sm border-0 p-2 text-start text-black outline-none dark:bg-black dark:text-white"
           ></textarea>
         </fieldset>
         <button
           type="submit"
-          className="btn mt-5 w-full border-black text-black dark:border-white dark:text-white"
+          className="btn mt-5 w-full border-2 text-black dark:text-white"
         >
           <span className="flex items-center justify-center gap-2 px-10 uppercase">
             Shoot <FaLongArrowAltRight />

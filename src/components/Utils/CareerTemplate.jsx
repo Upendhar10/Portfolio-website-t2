@@ -1,8 +1,8 @@
 import propTypes from "prop-types";
-
-const CareerTemplate = ({ title, name, cgpa }) => {
+import { MdArrowOutward } from "react-icons/md";
+const CareerTemplate = ({ title, name, cgpa, href }) => {
   return (
-    <div className="w-5/5 relative h-[120px] text-black dark:text-white">
+    <div className="w-5/5 relative my-5 h-[120px] font-[Alkatra] text-2xl text-black dark:text-white">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
@@ -18,7 +18,11 @@ const CareerTemplate = ({ title, name, cgpa }) => {
       <div className="ml-6 max-w-[350px] leading-loose">
         <h4 className="text-xl font-bold leading-relaxed">{title}</h4>
         <li className="text-base font-semibold leading-loose">{name}</li>
-        <li className="text-base font-bold leading-loose">{cgpa}</li>
+        <a href={href} target="_blank">
+          <li className="cursor-pointer text-base font-bold leading-loose">
+            {cgpa} <MdArrowOutward className="ml-1 inline" />
+          </li>
+        </a>
       </div>
     </div>
   );
@@ -30,4 +34,5 @@ CareerTemplate.propTypes = {
   title: propTypes.string.isRequired,
   name: propTypes.string.isRequired,
   cgpa: propTypes.string.isRequired, // CGPA in format "CGPA : x.x"
+  href: propTypes.string,
 };

@@ -14,7 +14,7 @@ function InputForm({
       <fieldset className="my-2 rounded-md border-2">
         <legend
           htmlFor={htmlFor}
-          className="form-label px-2 text-lg font-semibold text-black dark:text-white"
+          className="form-label px-2 text-lg text-black dark:text-white"
         >
           {labelText}
         </legend>
@@ -23,7 +23,7 @@ function InputForm({
           id={id}
           value={value}
           onChange={onChange}
-          className="form-input my-2 w-full rounded-sm bg-white p-1 px-3 text-black outline-none dark:bg-black dark:text-white"
+          className="form-input my-2 w-full rounded-sm bg-white px-3 py-1 text-black outline-none dark:bg-black dark:text-white"
           required={true}
           placeholder={placeholder}
         />

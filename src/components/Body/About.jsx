@@ -17,10 +17,10 @@ function About() {
         />
       </div>
       <div className="flex flex-col items-start justify-center gap-3 p-5">
-        <h2 className="font-[Gilroy-Dark] text-3xl uppercase text-blue-500">
+        <h2 className="font-[Gilroy-Dark] text-4xl uppercase text-blue-500">
           About me
         </h2>
-        <p className="max-w-[400px] text-justify text-lg font-semibold leading-loose tracking-wide md:max-w-[450px]">
+        <p className="max-w-[400px] text-justify font-[Alkatra] text-lg leading-loose tracking-wide md:max-w-[450px]">
           I am a passionate and an aspiring Frontend Engineer with a deep
           enthusiasm for crafting engaging and intuitive user interfaces. With a
           keen interest in building modern and accessible web applications, I am
@@ -32,9 +32,9 @@ function About() {
           Bringing Ideas to live using Code!
         </p> */}
 
-        <button className="btn w-3/5 border-black text-black dark:border-white dark:text-white">
+        <button className="btn w-3/5 text-black dark:border-white dark:text-white">
           <a href={Links.VITE_RESUME} target="_blank">
-            <span className="flex items-center justify-center gap-2 uppercase">
+            <span className="flex items-center justify-center gap-2 font-[Alkatra] uppercase">
               Resume <FaLongArrowAltRight className="icon" />
             </span>
           </a>

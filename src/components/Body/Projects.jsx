@@ -11,7 +11,7 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="lg-h-screen relative flex flex-col items-center justify-center gap-5 py-5 text-black transition-colors duration-500 dark:bg-black dark:text-white"
+      className="lg-h-screen relative flex flex-col items-center justify-center gap-5 py-5 font-[Alkatra] text-black transition-colors duration-500 dark:bg-black dark:text-white"
     >
       <h2 className="font-[Gilroy-Dark] text-3xl uppercase text-blue-500">
         projects

@@ -1,6 +1,6 @@
 function Logo() {
   return (
-    <div className="flex items-start justify-center gap-1">
+    <div className="flex items-center justify-center">
       <a href="/">
         <svg
           id="logo-72"
