@@ -1,7 +1,7 @@
 import assets from "../../assets/assets";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-import Links from "../../Configs/Links";
+// import Links from "../../Configs/Links";
 
 function About() {
   return (
@@ -33,7 +33,10 @@ function About() {
         </p> */}
 
         <button className="btn w-3/5 text-black dark:border-white dark:text-white">
-          <a href={Links.VITE_RESUME} target="_blank">
+          <a
+            href="https://drive.google.com/file/d/1RENM1pX3-BnuzwGOIuo-TiF09J8IW6A4/view?usp=sharing"
+            target="_blank"
+          >
             <span className="flex items-center justify-center gap-2 font-[Alkatra] uppercase">
               Resume <FaLongArrowAltRight className="icon" />
             </span>
